@@ -22,3 +22,10 @@ export function rgb(r,g,b){
     let rgb = "rgb(" + r + ", " + g + ", " + b + " )";
     return rgb;
 }
+
+export function fillAndStrokeCircle(x, y, radius){
+    context.beginPath();
+    context.arc(x, y, radius, 0, 360);
+    context.fill();
+    context.stroke();
+}
