@@ -29,3 +29,14 @@ export function fillAndStrokeCircle(x, y, radius){
     context.fill();
     context.stroke();
 }
+
+export function fillCircle(x, y, radius){
+    context.beginPath();
+    context.ellipse(x, y, radius, radius, 0, 0, 360);
+    context.fill();
+}
+
+
+export function calculateDistance(x1, y1, x2, y2){
+    return Math.hypot(x2 - x1, y2 - y1);
+}
