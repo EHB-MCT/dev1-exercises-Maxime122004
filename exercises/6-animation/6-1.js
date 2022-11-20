@@ -14,10 +14,10 @@ window.onmousemove = move;
  */
 
 function move(eventData){
-    let x = eventData.pageX;
+    let x = eventData.pageX; 
     let y = eventData.pageY;
     context.fillStyle = "white";
-    context.fillRect(0,0, width, height)
+    context.fillRect(0,0, width, height);
     context.strokeStyle = "red";
     Utils.drawLine(0,y, width, y+1);
     context.strokeStyle = "red";
