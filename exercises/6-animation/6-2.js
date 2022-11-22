@@ -15,8 +15,13 @@ update();
 
 function update(){
     frameCount++;
-    if(frameCount > width){
-        frameCount = width-frameCount;
+    xPos = xPos + 10;
+    yPos = yPos + 10;
+    if(yPos > height){
+        yPos = yPos - 10;
+    }
+    if(xPos > width){
+        xPos = xPos - 10;
     }
     drawBall();
     requestAnimationFrame(update);
@@ -27,7 +32,7 @@ function drawBall(){
     context.fillStyle = "white";
     context.fillRect(0, 0, width, height);
     context.fillStyle = "red";
-    Utils.fillCircle(xPos + frameCount, yPos, radius, radius);
+    Utils.fillCircle(xPos, yPos, radius, radius);
     if(xPos == width){
         context.rotate((Math.random()*360) * Math.PI / 180);
     }
