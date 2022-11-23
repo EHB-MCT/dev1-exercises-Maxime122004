@@ -20,7 +20,6 @@ function fillArray(){
     console.log(calculateAverage(numbers));
 }
 
-
 function calculateAverage(list){
     for(let i = 0; i < amountNumbers; i++){
         //calculate average
