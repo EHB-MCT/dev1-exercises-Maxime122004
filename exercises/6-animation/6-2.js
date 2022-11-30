@@ -47,8 +47,6 @@ function update(){
     }
 }
 
-window.onmousedown
-
 function drawBall(){
     context.fillStyle = "white";
     context.fillRect(0, 0, width, height);
